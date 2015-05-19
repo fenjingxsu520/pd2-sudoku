@@ -1,13 +1,19 @@
-#include <iostream>
-using namespace std;
-class Sudoku {
-  public:
- Sudoku();
-void GiveQuestion();
-void ReadIn();
+#include <cstdlib>
+#include <cstdio>
+#include <string>
+#include <fstream>
 
-void Solve();
+using namespace std;
+
+class Sudoku
+{
+public:
+    void GiveQuestion();
+    void ReadIn();
+    void Solve();
+    void re_find();
+
 private:
-int read[12][12];
-  };
+    int read[12][12],temp[12][12],ans;
+};
 
